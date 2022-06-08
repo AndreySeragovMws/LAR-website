@@ -81,12 +81,13 @@ h6 {
 }
 
 .container {
-  padding: 0 189px;
+  padding: 0 13%;
 }
 
 .header {
   position: relative;
   max-width: 1440px;
+  z-index: 1;
 }
 
 .header__wrapper {
@@ -97,6 +98,7 @@ h6 {
   min-height: 104px;
   min-width: 100%;
   padding: 0 80px;
+  z-index: 1;
 }
 
 .header__logo {
@@ -110,6 +112,10 @@ h6 {
   font-weight: 600;
   color: #d3d7e1;
   margin-left: 24px;
+}
+
+.header__navigation {
+  display: flex;
 }
 
 .header__menu {
@@ -130,7 +136,9 @@ h6 {
   background: url('../img/glow.png'), url('../img/hero-bg.jpg');
   background-repeat: no-repeat;
   min-width: 768px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
@@ -249,7 +257,7 @@ h6 {
 }
 
 .about-us {
-  margin-top: 88px;
+  padding-top: 88px;
 }
 
 .about-us__team {
@@ -364,7 +372,7 @@ h6 {
 }
 
 .projects {
-  margin-top: 88px;
+  padding-top: 88px;
 }
 
 .projects__descr {
@@ -559,7 +567,7 @@ h6 {
 }
 
 .jobs {
-  margin-top: 88px;
+  padding-top: 88px;
 }
 
 .jobs__title {
@@ -598,6 +606,16 @@ h6 {
   cursor: pointer;
   width: 32px;
   height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jobs__button--open {
+  background-image: url('../img/minus.svg');
+}
+
+.jobs__button--close {
+  background-image: url('../img/plus.svg');
 }
 
 .jobs__content {
@@ -868,6 +886,7 @@ h6 {
 .nav {
   min-height: 100vh;
   position: relative;
+  background-color: #ffffff;
 }
 
 .nav__header {
@@ -896,6 +915,7 @@ h6 {
 .nav__menu {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .nav__span {
@@ -932,11 +952,39 @@ h6 {
   opacity: 1;
 }
 
-.fixed__nav {
-  position: fixed;
-  background-color: black;
-  width: 500px;
-  height: 300px;
-  z-index: 5;
+.sticky__header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
+.sticky__wrapper {
+  background-color: #ffffff;
+  color: #1b202b;
+}
+
+@media (max-width: 1270px) {
+  h1 {
+    font-size: 42px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  h5 {
+    font-size: 18px;
+  }
+  
+  h6 {
+    font-size: 16px;
+  }
+}

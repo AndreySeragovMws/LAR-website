@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="header__wrapper">
@@ -44,20 +45,21 @@
             </defs>
           </svg>
           <p class="header__slogan">Мечтаем, создаём <br>и запускаем с 1999 года</p>
+        </div>
+        <div class="header__navigation">
+          <button class="header__button hero__button button-reset hide">Присоединиться к команде</button>
+          <button class="header__menu button-reset">
+            <span class="header__span">Меню</span>
+            <svg class="header__menu-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="11" width="24" height="3" rx="1.5" fill="white"/>
+              <rect x="8" y="19" width="12" height="3" rx="1.5" fill="white"/>
+              <rect x="8" y="27" width="24" height="3" rx="1.5" fill="white"/>
+              </svg>
+          </button>
+        </div>
       </div>
-        <button class="header__menu button-reset">
-          <span class="header__span">Меню</span>
-          <svg class="header__menu-icon" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="11" width="24" height="3" rx="1.5" fill="white"/>
-            <rect x="8" y="19" width="12" height="3" rx="1.5" fill="white"/>
-            <rect x="8" y="27" width="24" height="3" rx="1.5" fill="white"/>
-            </svg>
-        </button>
-      </div>
-    </header>
 
-    <main class="main">
-      <section class="nav hide">
+      <div class="nav hide">
         <div class="nav__header">
           <div class="nav__logo">
             <svg width="110" height="32" viewbox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,14 +110,11 @@
               <a href="#contacts" class="nav__link">Связаться с нами</a>
             </li>
           </ul>
-        </div>
-      
-      </section>
+        </div>     
+      </div>
+    </header>
 
-      <section class="fixed__nav hide">
-        
-      </section>
-
+    <main class="main">
       <section class="hero container" id="about-us">
         <div class="hero__main-block">
           <h1 class="hero__title">Запускайте цифровые продукты, которыми пользуются</h1>
@@ -436,13 +435,10 @@
           <li class="jobs__item">
             <div class="jobs__vacancy-name">
               <h4 class="jobs__item-title">Технический директор</h4>
-              <button class="jobs__button button-reset">
-                <svg class="jobs__item-svg" width="18" height="4" viewbox="0 0 18 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.25 0.5C17.4688 0.5 17.6406 0.578125 17.7656 0.734375C17.9219 0.859375 18 1.03125 18 1.25V2.75C18 2.96875 17.9219 3.15625 17.7656 3.3125C17.6406 3.4375 17.4688 3.5 17.25 3.5H0.75C0.53125 3.5 0.34375 3.4375 0.1875 3.3125C0.0625 3.15625 0 2.96875 0 2.75V1.25C0 1.03125 0.0625 0.859375 0.1875 0.734375C0.34375 0.578125 0.53125 0.5 0.75 0.5H17.25Z" fill="#C51F43"/>
-                  </svg>
+              <button class="jobs__button jobs__button--close button-reset">
               </button>
             </div>
-            <div class="jobs__content content">
+            <div class="jobs__content content hide">
               <div class="content__descr">
                 <p class="content__text">Cистемный архитектор / руководитель проекта / ведущий разработчик в 
                   одном лице для работы в команде сильных программистов. 
@@ -486,10 +482,7 @@
           <li class="jobs__item">
             <div class="jobs__vacancy-name">
               <h4 class="jobs__item-title">Java-разработчик</h4>
-              <button class="jobs__button button-reset">
-                <svg class="jobs__item-svg" width="18" height="4" viewbox="0 0 18 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.25 0.5C17.4688 0.5 17.6406 0.578125 17.7656 0.734375C17.9219 0.859375 18 1.03125 18 1.25V2.75C18 2.96875 17.9219 3.15625 17.7656 3.3125C17.6406 3.4375 17.4688 3.5 17.25 3.5H0.75C0.53125 3.5 0.34375 3.4375 0.1875 3.3125C0.0625 3.15625 0 2.96875 0 2.75V1.25C0 1.03125 0.0625 0.859375 0.1875 0.734375C0.34375 0.578125 0.53125 0.5 0.75 0.5H17.25Z" fill="#C51F43"/>
-                  </svg>
+              <button class="jobs__button jobs__button--close button-reset">
               </button>
             </div>
             <div class="jobs__content content hide">
@@ -535,10 +528,7 @@
           <li class="jobs__item">
             <div class="jobs__vacancy-name">
               <h4 class="jobs__item-title">Javascript-разработчик</h4>
-              <button class="jobs__button button-reset">
-                <svg class="jobs__item-svg" width="18" height="4" viewbox="0 0 18 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17.25 0.5C17.4688 0.5 17.6406 0.578125 17.7656 0.734375C17.9219 0.859375 18 1.03125 18 1.25V2.75C18 2.96875 17.9219 3.15625 17.7656 3.3125C17.6406 3.4375 17.4688 3.5 17.25 3.5H0.75C0.53125 3.5 0.34375 3.4375 0.1875 3.3125C0.0625 3.15625 0 2.96875 0 2.75V1.25C0 1.03125 0.0625 0.859375 0.1875 0.734375C0.34375 0.578125 0.53125 0.5 0.75 0.5H17.25Z" fill="#C51F43"/>
-                  </svg>
+              <button class="jobs__button jobs__button--close button-reset">
               </button>
             </div>
             <div class="jobs__content content hide">
