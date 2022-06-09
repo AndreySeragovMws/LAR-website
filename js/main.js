@@ -18,11 +18,13 @@ const jobsList = document.querySelector('.jobs__list');
 openMenuButton.addEventListener('click', () => {
   nav.classList.remove('hide');
   headerMenu.classList.add('hide');
+  // document.body.style.position = 'fixed';
 });
 
 closeMenuButton.addEventListener('click', () => {
   nav.classList.add('hide');
   headerMenu.classList.remove('hide');
+  // document.body.style.position = '';
 });
 
 navList.addEventListener('click', (evt) => {
@@ -66,7 +68,7 @@ document.addEventListener('scroll', () => {
 jobsList.addEventListener('click', (evt) => {
   const target = evt.target;
   jobsItems.forEach((item, i) => {
-    if (target == item || target.classList.contains('jobs__button')) {
+    if (target == item || target.classList.contains('jobs__button') || target.classList.contains('jobs__item-title')) {
       jobsContent[i].classList.toggle('hide');
       jobsButtons[i].classList.toggle('jobs__button--close');
       jobsButtons[i].classList.toggle('jobs__button--open');
