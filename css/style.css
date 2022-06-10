@@ -744,7 +744,7 @@ textarea {
 }
 
 .blog__image {
-  min-height: 210px;
+  height: 210px;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
   width: 100%;
