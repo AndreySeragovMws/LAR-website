@@ -890,8 +890,8 @@ textarea {
   background: #2A303D33;
   min-height: 5.5rem;
   margin-top: 5.5rem;
-  padding-left: 5.5rem;
-  padding-right: 5.5rem;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .footer__social {
