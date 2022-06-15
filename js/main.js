@@ -12,6 +12,7 @@ const headerButton = document.querySelector('.header__button');
 const jobsItems = document.querySelectorAll('.jobs__vacancy-name');
 const jobsContent = document.querySelectorAll('.jobs__content');
 const jobsButtons = document.querySelectorAll('.jobs__button')
+const jobsTitles = document.querySelectorAll('.jobs__item-title');
 const jobsList = document.querySelector('.jobs__list');
 
 //header menu
@@ -68,7 +69,21 @@ document.addEventListener('scroll', () => {
 jobsList.addEventListener('click', (evt) => {
   const target = evt.target;
   jobsItems.forEach((item, i) => {
-    if (target == item || target.classList.contains('jobs__button') || target.classList.contains('jobs__item-title')) {
+    if (target == item) {
+      jobsContent[i].classList.toggle('hide');
+      jobsButtons[i].classList.toggle('jobs__button--close');
+      jobsButtons[i].classList.toggle('jobs__button--open');
+    }
+  });
+  jobsButtons.forEach((item, i) => {
+    if (target == item) {
+      jobsContent[i].classList.toggle('hide');
+      jobsButtons[i].classList.toggle('jobs__button--close');
+      jobsButtons[i].classList.toggle('jobs__button--open');
+    }
+  });
+  jobsTitles.forEach((item, i) => {
+    if (target == item) {
       jobsContent[i].classList.toggle('hide');
       jobsButtons[i].classList.toggle('jobs__button--close');
       jobsButtons[i].classList.toggle('jobs__button--open');

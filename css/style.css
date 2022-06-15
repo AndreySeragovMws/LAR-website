@@ -520,6 +520,7 @@ textarea {
   margin-top: 5.5rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  overflow: hidden;
 }
 
 .benefits__list {
@@ -641,6 +642,14 @@ textarea {
   height: 2rem;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+}
+
+.jobs__button:hover {
+  background-color: transparent;
+}
+
+.jobs__button:hover {
   background-color: transparent;
 }
 
@@ -936,6 +945,14 @@ textarea {
   background-color: transparent;
 }
 
+.nav__menu:hover {
+  background-color: transparent;
+}
+
+.nav__menu:active {
+  background-color: transparent;
+}
+
 .nav__span {
   color: #1b202b;
   font-weight: 600;
@@ -1149,6 +1166,13 @@ textarea {
 
   .footer__map {
     min-height: 500px;
+  }
+
+  .benefits__list {
+    grid-template-columns: repeat(6, 288px);
+    grid-template-areas:
+      "a b d f h j"
+      "a c e g i _";
   }
   
 }
