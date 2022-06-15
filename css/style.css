@@ -88,6 +88,11 @@ button:active {
   background-color: #b01c3c;
 }
 
+button:disabled {
+  background-color: #f3f5fa;
+  color: #d3d7e1;
+}
+
 input {
   border: none;
   width: 100%;
@@ -805,10 +810,6 @@ textarea {
   margin-top: 0.5rem;
   line-height: 25px;
   color: #6a7488;
-}
-
-.post__date {
-  color: #9ca5b6;
 }
 
 .footer {
