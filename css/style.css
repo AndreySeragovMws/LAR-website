@@ -791,11 +791,10 @@ textarea {
 }
 
 .post__descr {
+  height: 200px;
   padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 240px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .post__title {
