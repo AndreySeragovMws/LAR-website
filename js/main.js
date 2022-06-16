@@ -14,6 +14,10 @@ const jobsContent = document.querySelectorAll('.jobs__content');
 const jobsButtons = document.querySelectorAll('.jobs__button')
 const jobsTitles = document.querySelectorAll('.jobs__item-title');
 const jobsList = document.querySelector('.jobs__list');
+const video = document.querySelector('.about-us__video');
+const videoText = document.querySelector('.about-us__title');
+const videoClose = document.querySelector('.video__close-button');
+const videoPlay = document.querySelector('.video__play-button');
 
 //header menu
 openMenuButton.addEventListener('click', () => {
@@ -91,6 +95,34 @@ jobsList.addEventListener('click', (evt) => {
   });
 });
 
+//video
+video.addEventListener('click', () => {
+  videoPlay.classList.add('hide');
+  videoClose.classList.remove('hide');
+  video.setAttribute('controls' , 'controls');
+  if (document.documentElement.clientWidth >= 1060) {
+    videoText.classList.add('hide');
+  }
+  
+});
+
+videoPlay.addEventListener('click', () => {
+  videoPlay.classList.add('hide');
+  videoClose.classList.remove('hide');
+  video.setAttribute('controls' , 'controls');
+  video.play();
+  if (document.documentElement.clientWidth >= 1060) {
+    videoText.classList.add('hide');
+  }
+});
+
+videoClose.addEventListener('click', () => {
+  videoText.classList.remove('hide');
+  videoPlay.classList.remove('hide');
+  videoClose.classList.add('hide');
+  video.removeAttribute('controls' , 'controls');
+  video.pause();
+});
 
 
 
