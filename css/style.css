@@ -1169,7 +1169,7 @@ textarea {
   }
 
   .benefits__list {
-    grid-template-columns: repeat(6, 288px);
+    grid-template-columns: repeat(6, 350px);
     grid-template-areas:
       "a b d f h j"
       "a c e g i _";
@@ -1370,6 +1370,10 @@ textarea {
 
   .promo__gantt {
     top: 12%;
+  }
+
+  .benefits__list {
+    grid-template-columns: repeat(6, 288px);
   }
 }
 
