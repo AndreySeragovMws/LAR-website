@@ -348,13 +348,15 @@ textarea {
 .about-us__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: left;
   row-gap: 1.5rem;
   column-gap: 2rem;
   margin-top: 2.5rem;
 }
 
 .about-us__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 56px, 1fr;
   align-items: center;
 }
 
@@ -363,6 +365,7 @@ textarea {
   line-height: 22px;
   color: #1b202b;
   margin-left: 1rem;
+  grid-column: 2 / 3;
 }
 
 .quote {
