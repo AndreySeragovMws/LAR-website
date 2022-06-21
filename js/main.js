@@ -21,13 +21,17 @@ const videoPlay = document.querySelector('.video__play-button');
 
 //header menu
 openMenuButton.addEventListener('click', () => {
+  nav.classList.remove('fadeout');
   nav.classList.remove('hide');
   headerMenu.classList.add('hide');
   // document.body.style.position = 'fixed';
 });
 
 closeMenuButton.addEventListener('click', () => {
-  nav.classList.add('hide');
+  nav.classList.add('fadeout');
+  setTimeout(() => {
+    nav.classList.add('hide')
+  }, 450);
   headerMenu.classList.remove('hide');
   // document.body.style.position = '';
 });

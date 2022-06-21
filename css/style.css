@@ -179,7 +179,7 @@ textarea:disabled {
   position: absolute;
   min-height: 6.5rem;
   min-width: 100%;
-  padding: 0 3%;
+  padding: 0 5%;
   z-index: 1;
 }
 
@@ -263,6 +263,16 @@ textarea:disabled {
   color:  #ffffff;
   text-decoration: none;
   font-weight: 600;
+}
+
+.hero__jobs:hover > .hero__arrow {
+  animation: move-arrow-down 1s linear infinite;
+}
+
+@keyframes move-arrow-down {
+  50% {
+    transform: translateY(5px)
+  }
 }
 
 .hero__button {
@@ -1046,9 +1056,10 @@ textarea:disabled {
 
 .nav {
   min-height: 100vh;
-  position: relative;
+  position: absolute;
   background-color: #ffffff;
   animation: fade 0.5s linear;
+  width: 100%;
 }
 
 .nav__header {
@@ -1072,6 +1083,7 @@ textarea:disabled {
   font-weight: 600;
   color: #9ca5b6;
   margin-left: 1.5rem;
+  animation: fade 0.5s linear;
 }
 
 .nav__menu {
@@ -1079,6 +1091,7 @@ textarea:disabled {
   align-items: center;
   background-color: transparent;
   width: 95px;
+  animation: fade 0.5s linear;
 }
 
 .nav__menu:hover {
@@ -1100,7 +1113,6 @@ textarea:disabled {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  
 }
 
 @keyframes fade {
@@ -1110,6 +1122,20 @@ textarea:disabled {
   100% {
     opacity: 1;
   }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeout {
+  animation: fadeout 0.5s linear;
 }
 
 .nav__item {
