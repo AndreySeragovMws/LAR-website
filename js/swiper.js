@@ -25,7 +25,7 @@ const swiper = new Swiper('.blog__slider', {
 });
 
 
-const swiperGrid = new Swiper(".benefits", {
+const swiperGrid = new Swiper(".benefits__wrapper", {
   slidesPerView: "auto",
   // slidesPerGroup: 2,
   spaceBetween: 16,

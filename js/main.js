@@ -9,11 +9,11 @@ const headerLogo = document.querySelectorAll('.header__logo-icon path');
 const headerSpan = document.querySelector('.header__span');
 const headerBurger = document.querySelectorAll('.header__menu-icon rect');
 const headerButton = document.querySelector('.header__button');
-const jobsItems = document.querySelectorAll('.jobs__vacancy-name');
-const jobsContent = document.querySelectorAll('.jobs__content');
-const jobsButtons = document.querySelectorAll('.jobs__button')
-const jobsTitles = document.querySelectorAll('.jobs__item-title');
-const jobsList = document.querySelector('.jobs__list');
+// const jobsItems = document.querySelectorAll('.jobs__vacancy-name');
+// const jobsContent = document.querySelectorAll('.jobs__content');
+// const jobsButtons = document.querySelectorAll('.jobs__button')
+// const jobsTitles = document.querySelectorAll('.jobs__item-title');
+// const jobsList = document.querySelector('.jobs__list');
 const video = document.querySelector('.about-us__video');
 const videoText = document.querySelector('.about-us__title');
 const videoClose = document.querySelector('.video__close-button');
@@ -70,30 +70,30 @@ document.addEventListener('scroll', () => {
 })
 
 // tabs
-jobsList.addEventListener('click', (evt) => {
-  const target = evt.target;
-  jobsItems.forEach((item, i) => {
-    if (target == item) {
-      jobsContent[i].classList.toggle('hide');
-      jobsButtons[i].classList.toggle('jobs__button--close');
-      jobsButtons[i].classList.toggle('jobs__button--open');
-    }
-  });
-  jobsButtons.forEach((item, i) => {
-    if (target == item) {
-      jobsContent[i].classList.toggle('hide');
-      jobsButtons[i].classList.toggle('jobs__button--close');
-      jobsButtons[i].classList.toggle('jobs__button--open');
-    }
-  });
-  jobsTitles.forEach((item, i) => {
-    if (target == item) {
-      jobsContent[i].classList.toggle('hide');
-      jobsButtons[i].classList.toggle('jobs__button--close');
-      jobsButtons[i].classList.toggle('jobs__button--open');
-    }
-  });
-});
+// jobsList.addEventListener('click', (evt) => {
+//   const target = evt.target;
+//   jobsItems.forEach((item, i) => {
+//     if (target == item) {
+//       jobsContent[i].classList.toggle('hide');
+//       jobsButtons[i].classList.toggle('jobs__button--close');
+//       jobsButtons[i].classList.toggle('jobs__button--open');
+//     }
+//   });
+//   jobsButtons.forEach((item, i) => {
+//     if (target == item) {
+//       jobsContent[i].classList.toggle('hide');
+//       jobsButtons[i].classList.toggle('jobs__button--close');
+//       jobsButtons[i].classList.toggle('jobs__button--open');
+//     }
+//   });
+//   jobsTitles.forEach((item, i) => {
+//     if (target == item) {
+//       jobsContent[i].classList.toggle('hide');
+//       jobsButtons[i].classList.toggle('jobs__button--close');
+//       jobsButtons[i].classList.toggle('jobs__button--open');
+//     }
+//   });
+// });
 
 //video
 video.addEventListener('click', () => {

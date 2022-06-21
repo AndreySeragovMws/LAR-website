@@ -16,6 +16,7 @@
 .hero-blog__descr {
   max-width: 515px;
   line-height: 25px;
+  color: #ffffff;
 }
 
 .blogs__list {
@@ -158,6 +159,10 @@
 
 .blogs__button:active {
   background-color: #d3d7e1;
+}
+
+.blogs__button:focus {
+  background-color: #e3e7ed;
 }
 
 
