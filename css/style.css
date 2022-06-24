@@ -194,6 +194,7 @@ textarea:disabled {
   font-weight: 600;
   color: #d3d7e1;
   margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 .header__navigation {
@@ -769,6 +770,10 @@ textarea:disabled {
   background-color: transparent;
 }
 
+.jobs__button:focus {
+  background-color: transparent;
+}
+
 .jobs__button--open {
   background-image: url('../img/minus.svg');
 }
@@ -1058,7 +1063,6 @@ textarea:disabled {
   min-height: 100vh;
   position: absolute;
   background-color: #ffffff;
-  animation: fade 0.5s linear;
   width: 100%;
 }
 
@@ -1083,7 +1087,7 @@ textarea:disabled {
   font-weight: 600;
   color: #9ca5b6;
   margin-left: 1.5rem;
-  animation: fade 0.5s linear;
+ 
 }
 
 .nav__menu {
@@ -1099,6 +1103,10 @@ textarea:disabled {
 }
 
 .nav__menu:active {
+  background-color: transparent;
+}
+
+.nav__menu:focus {
   background-color: transparent;
 }
 
