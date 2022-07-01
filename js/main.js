@@ -104,9 +104,9 @@ video.addEventListener('click', () => {
   videoPlay.classList.add('hide');
   videoClose.classList.remove('hide');
   video.setAttribute('controls' , 'controls');
-  if (document.documentElement.clientWidth >= 1060) {
-    videoText.classList.add('hide');
-  }
+  // if (document.documentElement.clientWidth >= 1060) {
+  //   videoText.classList.add('hide');
+  // }
   
 });
 
@@ -115,9 +115,9 @@ videoPlay.addEventListener('click', () => {
   videoClose.classList.remove('hide');
   video.setAttribute('controls' , 'controls');
   video.play();
-  if (document.documentElement.clientWidth >= 1060) {
-    videoText.classList.add('hide');
-  }
+  // if (document.documentElement.clientWidth >= 1060) {
+  //   videoText.classList.add('hide');
+  // }
 });
 
 videoClose.addEventListener('click', () => {

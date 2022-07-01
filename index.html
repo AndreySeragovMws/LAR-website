@@ -65,7 +65,7 @@
       <div class="nav hide">
         <div class="nav__header">
           <div class="nav__logo">
-            <a href="index.html" class="nav__link">
+            <a href="index.html">
               <svg width="110" height="32" viewbox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_342_361)">
                 <path d="M26.169 25.4008H7.17392C6.9032 25.4008 6.63249 25.1736 6.63249 24.8556V3.31711C6.63249 1.45407 5.14356 0 3.33881 0C1.48893 0 0 1.49951 0 3.31711V26.8549C0 29.7176 2.30107 32.0805 5.18867 32.0805H26.169C28.0189 32.0805 29.4627 30.581 29.4627 28.7634C29.5078 26.9004 28.0189 25.4008 26.169 25.4008Z" fill="#C51F43"/>
@@ -84,7 +84,7 @@
           </div>
           <button class="nav__menu">
             <span class="nav__span">Меню</span>
-            <svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="40" height="40" viewbox="-10 -10 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="19.7242" width="27.8941" height="3.21855" rx="1.60928" transform="rotate(-45 0 19.7242)" fill="#1B202B"/>
               <rect x="19.7241" y="22" width="27.8941" height="3.21855" rx="1.60928" transform="rotate(-135 19.7241 22)" fill="#1B202B"/>
               </svg>
@@ -200,6 +200,7 @@
 
       <section class="about-us container" id="LAR">
         <div class="about-us__team">
+          <h2 class="about-us__title">Команда мечтателей, изобретателей и инженеров, <br><span class="about-us__title--grey">которые мыслят за рамками привычного<br> и делают невозможное</span></h2>
           <div class="about-us__videobox video">
             <video class="about-us__video" src="video/video.mp4"></video>
             <div class="video__play-button play-button">
@@ -215,7 +216,7 @@
                 </svg>
             </button>
           </div>
-          <h2 class="about-us__title">Команда мечтателей, изобретателей и инженеров, <br><span class="about-us__title--grey">которые мыслят за рамками привычного и делают невозможное</span></h2>
+          
         </div>
         <div class="about-us__features">
           <h2 class="about-us__title--features">LAR — это возможность улучшать себя и влиять на окружающий
@@ -309,13 +310,19 @@
           </a>
           <ul class="promo__awards awards list-reset">
             <li class="awards__item">
-              <img src="img/g2crowd.png" alt="g2crowd">
+              <a href="#" class="awards__link">
+                <img src="img/g2crowd.png" alt="g2crowd">
+              </a>
             </li>
             <li class="awards__item">
-              <img src="img/google_workspace.png" alt="google workspace">
+              <a href="#" class="awards__link">
+                <img src="img/google_workspace.png" alt="google workspace">
+              </a>
             </li>
             <li class="awards__item">
-              <img src="img/capterra.png" alt="capterra">
+              <a href="#" class="awards__link">
+                <img src="img/capterra.png" alt="capterra">
+              </a>
             </li>
           </ul>
           <p class="promo__descr">Наш собственный продукт, который мы создали с нуля и без инвестиций, развили до инструмента, за который платят тысячи компаний со всего мира. Сейчас Kanbanchi составляет достойную конкуренцию таким гигантам как Trello и Jira. Это заняло 5 лет.</p>
@@ -610,31 +617,37 @@
           <div class="blog__slider swiper">
             <ul class="blog__posts swiper-wrapper list-reset">
               <li class="blog__item post swiper-slide">
-                <img src="img/preview-blog-image.jpg" alt="Приходите в ЛАР" class="blog__image">
-                <div class="post__descr">
-                  <div class="post__wrapper">
-                    <h5 class="post__title">Приходите работать в ЛАР</h5>
-                    <p class="post__text">Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...</p>
+                <a href="#" class="post__link">
+                  <img src="img/preview-blog-image.jpg" alt="Приходите в ЛАР" class="blog__image">
+                  <div class="post__descr">
+                    <div class="post__wrapper">
+                      <h5 class="post__title">Приходите работать в ЛАР</h5>
+                      <p class="post__text">Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
               <li class="blog__item post swiper-slide">
-                <img src="img/kanban_board.jpg" alt="Приходите в ЛАР" class="blog__image">
-                <div class="post__descr">
-                  <div class="post__wrapper">
-                    <h5 class="post__title">Lean Coffee #14: Разработка</h5>
-                    <p class="post__text">Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...</p>
+                <a href="#" class="post__link">
+                  <img src="img/kanban_board.jpg" alt="Приходите в ЛАР" class="blog__image">
+                  <div class="post__descr">
+                    <div class="post__wrapper">
+                      <h5 class="post__title">Lean Coffee #14: Разработка</h5>
+                      <p class="post__text">Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к Вашему мнению не прислушиваются...</p>
+                    </div>
                   </div>
-                </div>
+                </a>  
               </li>
               <li class="blog__item post swiper-slide">
-                <img src="img/gantt.png" alt="Приходите в ЛАР" class="blog__image">
-                <div class="post__descr">
-                  <div class="post__wrapper">
-                    <h5 class="post__title">Outsource your web application development to LAR</h5>
-                    <p class="post__text">Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к...</p>
+                <a href="#" class="post__link">
+                  <img src="img/gantt.png" alt="Приходите в ЛАР" class="blog__image">
+                  <div class="post__descr">
+                    <div class="post__wrapper">
+                      <h5 class="post__title">Outsource your web application development to LAR</h5>
+                      <p class="post__text">Может быть, Вы работаете в большой компании, где над Вами стоит много менеджеров, к...</p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </li>
             </ul>
         </div>
