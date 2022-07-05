@@ -73,11 +73,7 @@ function getRect() {
 
   if (domRect.bottom <= document.documentElement.clientHeight && domRect.top > 104) {
     video.play();
-    video.setAttribute('controls' , 'controls');
   } else {
-    video.pause();
-  }
-  if (domRect.top < 104) {
     video.pause();
     video.removeAttribute('controls' , 'controls');
   }
@@ -85,6 +81,10 @@ function getRect() {
 
 window.addEventListener('scroll', () => {
   getRect();
+})
+
+video.addEventListener('click', () => {
+  video.setAttribute('controls' , 'controls');
 })
 
 
