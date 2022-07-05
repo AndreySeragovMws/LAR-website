@@ -15,7 +15,7 @@ const headerButton = document.querySelector('.header__button');
 // const jobsTitles = document.querySelectorAll('.jobs__item-title');
 // const jobsList = document.querySelector('.jobs__list');
 const video = document.querySelector('.about-us__video');
-const videoText = document.querySelector('.about-us__title');
+const videoBox = document.querySelector('.about-us__videobox');
 const videoClose = document.querySelector('.video__close-button');
 const videoPlay = document.querySelector('.video__play-button');
 
@@ -101,32 +101,55 @@ document.addEventListener('scroll', () => {
 
 //video
 video.addEventListener('click', () => {
-  videoPlay.classList.add('hide');
-  videoClose.classList.remove('hide');
+  // videoPlay.classList.add('hide');
+  // videoClose.classList.remove('hide');
   video.setAttribute('controls' , 'controls');
-  // if (document.documentElement.clientWidth >= 1060) {
-  //   videoText.classList.add('hide');
-  // }
-  
-});
-
-videoPlay.addEventListener('click', () => {
-  videoPlay.classList.add('hide');
-  videoClose.classList.remove('hide');
-  video.setAttribute('controls' , 'controls');
-  video.play();
   // if (document.documentElement.clientWidth >= 1060) {
   //   videoText.classList.add('hide');
   // }
 });
 
-videoClose.addEventListener('click', () => {
-  videoText.classList.remove('hide');
-  videoPlay.classList.remove('hide');
-  videoClose.classList.add('hide');
-  video.removeAttribute('controls' , 'controls');
-  video.pause();
-});
+function getRect() {
+  const domRect = video.getBoundingClientRect();
+
+  if (domRect.bottom <= document.documentElement.clientHeight) {
+    video.play();
+    video.removeAttribute('controls' , 'controls');
+  } else {
+    video.pause();
+  }
+  if (domRect.top < 104) {
+    video.pause();
+    video.removeAttribute('controls' , 'controls');
+  }
+}
+
+window.addEventListener('scroll', () => {
+  getRect();
+})
+
+// videoPlay.addEventListener('click', () => {
+//   videoPlay.classList.add('hide');
+//   videoClose.classList.remove('hide');
+//   video.setAttribute('controls' , 'controls');
+//   video.play();
+//   // if (document.documentElement.clientWidth >= 1060) {
+//   //   videoText.classList.add('hide');
+//   // }
+// });
+
+// videoClose.addEventListener('click', () => {
+//   videoText.classList.remove('hide');
+//   videoPlay.classList.remove('hide');
+//   videoClose.classList.add('hide');
+//   video.removeAttribute('controls' , 'controls');
+//   video.pause();
+// });
+
+
+
+
+
 
 
 
