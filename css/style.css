@@ -88,6 +88,7 @@ button {
   width: 295px;
   height: 60px;
   transition: 0.5s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
@@ -105,6 +106,10 @@ button:active {
 button:disabled {
   background-color: #f3f5fa;
   color: #d3d7e1;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
 }
 
 input {
@@ -193,7 +198,6 @@ textarea:disabled {
   line-height: 17px;
   font-weight: 600;
   color: #9ca5b6;
-  margin-left: 24px;
   margin-left: 1.5rem;
 }
 
@@ -215,6 +219,11 @@ textarea:disabled {
 .header__menu:active {
   background-color: transparent;
 }
+
+.header__menu:focus {
+  background-color: transparent;
+}
+
 .header__span {
   color: #ffffff;
   font-weight: 600;
@@ -363,12 +372,12 @@ textarea:disabled {
   padding-top: 5.5rem;
 }
 
-.about-us__team {
-  /* display: grid;
+/* .about-us__team {
+  display: grid;
   grid-template-columns: 45% 1fr;
-  gap: 4.375rem; */
-  /* display: flex; */
-}
+  gap: 4.375rem;
+   display: flex;
+} */
 
 .about-us__videobox {
   position: relative;
@@ -1102,6 +1111,8 @@ textarea:disabled {
   background-color: transparent;
   width: 110px;
   animation: fade 0.5s linear;
+  
+
 }
 
 .nav__menu:hover {
@@ -1208,6 +1219,11 @@ textarea:disabled {
   
   h2 {
     font-size: 30px;
+  }
+
+  .jobs__descr {
+    font-size: 30px;
+
   }
 
   .container {
@@ -1431,6 +1447,10 @@ textarea:disabled {
     font-size: 22px;
   }
 
+  .jobs__descr {
+    font-size: 28px;
+  }
+
   .about-us__list {
     grid-template-columns: 1fr;
   }
@@ -1552,6 +1572,11 @@ textarea:disabled {
     line-height: 20px;
   }
 
+  .jobs__descr {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
   .hero__link {
     justify-self: right;
   }
@@ -1581,6 +1606,16 @@ textarea:disabled {
   }
 }
 
+@media (max-width: 445px) {
+  .header__slogan {
+    display: none;
+  }
+
+  .nav__slogan {
+    display: none;
+  }
+}
+
 @media (max-width: 375px) {
   .promo__gantt {
     top: 10%;
@@ -1592,16 +1627,6 @@ textarea:disabled {
 
   .reviews__item {
     padding: 2rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .header__slogan {
-    display: none;
-  }
-
-  .nav__slogan {
-    display: none;
   }
 }
 

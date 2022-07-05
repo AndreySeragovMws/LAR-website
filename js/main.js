@@ -9,11 +9,6 @@ const headerLogo = document.querySelectorAll('.header__logo-icon path');
 const headerSpan = document.querySelector('.header__span');
 const headerBurger = document.querySelectorAll('.header__menu-icon rect');
 const headerButton = document.querySelector('.header__button');
-// const jobsItems = document.querySelectorAll('.jobs__vacancy-name');
-// const jobsContent = document.querySelectorAll('.jobs__content');
-// const jobsButtons = document.querySelectorAll('.jobs__button')
-// const jobsTitles = document.querySelectorAll('.jobs__item-title');
-// const jobsList = document.querySelector('.jobs__list');
 const video = document.querySelector('.about-us__video');
 const videoBox = document.querySelector('.about-us__videobox');
 const videoClose = document.querySelector('.video__close-button');
@@ -24,7 +19,6 @@ openMenuButton.addEventListener('click', () => {
   nav.classList.remove('fadeout');
   nav.classList.remove('hide');
   headerMenu.classList.add('hide');
-  // document.body.style.position = 'fixed';
 });
 
 closeMenuButton.addEventListener('click', () => {
@@ -33,7 +27,6 @@ closeMenuButton.addEventListener('click', () => {
     nav.classList.add('hide')
   }, 450);
   headerMenu.classList.remove('hide');
-  // document.body.style.position = '';
 });
 
 navList.addEventListener('click', (evt) => {
@@ -73,48 +66,14 @@ document.addEventListener('scroll', () => {
   }
 })
 
-// tabs
-// jobsList.addEventListener('click', (evt) => {
-//   const target = evt.target;
-//   jobsItems.forEach((item, i) => {
-//     if (target == item) {
-//       jobsContent[i].classList.toggle('hide');
-//       jobsButtons[i].classList.toggle('jobs__button--close');
-//       jobsButtons[i].classList.toggle('jobs__button--open');
-//     }
-//   });
-//   jobsButtons.forEach((item, i) => {
-//     if (target == item) {
-//       jobsContent[i].classList.toggle('hide');
-//       jobsButtons[i].classList.toggle('jobs__button--close');
-//       jobsButtons[i].classList.toggle('jobs__button--open');
-//     }
-//   });
-//   jobsTitles.forEach((item, i) => {
-//     if (target == item) {
-//       jobsContent[i].classList.toggle('hide');
-//       jobsButtons[i].classList.toggle('jobs__button--close');
-//       jobsButtons[i].classList.toggle('jobs__button--open');
-//     }
-//   });
-// });
-
 //video
-video.addEventListener('click', () => {
-  // videoPlay.classList.add('hide');
-  // videoClose.classList.remove('hide');
-  video.setAttribute('controls' , 'controls');
-  // if (document.documentElement.clientWidth >= 1060) {
-  //   videoText.classList.add('hide');
-  // }
-});
 
 function getRect() {
   const domRect = video.getBoundingClientRect();
 
-  if (domRect.bottom <= document.documentElement.clientHeight) {
+  if (domRect.bottom <= document.documentElement.clientHeight && domRect.top > 104) {
     video.play();
-    video.removeAttribute('controls' , 'controls');
+    video.setAttribute('controls' , 'controls');
   } else {
     video.pause();
   }
@@ -128,23 +87,6 @@ window.addEventListener('scroll', () => {
   getRect();
 })
 
-// videoPlay.addEventListener('click', () => {
-//   videoPlay.classList.add('hide');
-//   videoClose.classList.remove('hide');
-//   video.setAttribute('controls' , 'controls');
-//   video.play();
-//   // if (document.documentElement.clientWidth >= 1060) {
-//   //   videoText.classList.add('hide');
-//   // }
-// });
-
-// videoClose.addEventListener('click', () => {
-//   videoText.classList.remove('hide');
-//   videoPlay.classList.remove('hide');
-//   videoClose.classList.add('hide');
-//   video.removeAttribute('controls' , 'controls');
-//   video.pause();
-// });
 
 
 
